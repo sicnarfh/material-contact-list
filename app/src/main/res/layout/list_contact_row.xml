@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/material_list_row_height"
+              android:paddingLeft="@dimen/material_list_padding_horizontal"
+              android:paddingRight="@dimen/material_list_padding_horizontal"
+              android:paddingStart="@dimen/material_list_padding_horizontal"
+              android:paddingEnd="@dimen/material_list_padding_horizontal"
+              android:background="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/list_contact_row_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="John Doe"
+        style="@style/MaterialListTextPrimary"/>
+
+    <TextView
+        android:id="@+id/list_contact_row_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="john.doe@gmail.com"
+        style="@style/MaterialListTextSecondary"/>
+
+</LinearLayout>

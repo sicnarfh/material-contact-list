@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".MainActivityFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_contact_list_loading_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/fragment_contact_list_loading"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_contact_list_retry_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/material_list_padding_horizontal"
+        android:paddingLeft="@dimen/material_list_padding_horizontal"
+        android:paddingRight="@dimen/material_list_padding_horizontal"
+        android:paddingStart="@dimen/material_list_padding_horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/fragment_contact_list_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            tools:text="Error: Could not find hostname"
+            />
+
+        <Button
+            android:id="@+id/fragment_contact_list_retry_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_contact_list_retry"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

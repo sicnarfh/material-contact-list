@@ -1,0 +1,137 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nz.co.kiwiandroiddev.materialcontactlist.ContactDetailsFragment"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:paddingEnd="@dimen/material_list_padding_horizontal"
+                  android:paddingLeft="@dimen/material_list_tile_padding_horizontal"
+                  android:paddingRight="@dimen/material_list_tile_padding_horizontal"
+                  android:paddingStart="@dimen/material_list_padding_horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MaterialListRowLayout">
+
+            <TextView
+                android:id="@+id/fragment_contact_details_name"
+                style="@style/MaterialListTextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="John Doe"/>
+
+            <TextView
+                style="@style/MaterialListTextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_contact_details_name"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MaterialListRowLayout">
+
+            <TextView
+                android:id="@+id/fragment_contact_details_email"
+                style="@style/MaterialListTextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="john.doe@gmail.com"
+                android:autoLink="email"/>
+
+            <TextView
+                style="@style/MaterialListTextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_contact_details_email"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MaterialListRowLayout">
+
+            <TextView
+                android:id="@+id/fragment_contact_details_phone"
+                style="@style/MaterialListTextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="(09) 867-5309"
+                android:autoLink="phone"/>
+
+            <TextView
+                style="@style/MaterialListTextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_contact_details_phone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MaterialListRowLayout">
+
+            <TextView
+                android:id="@+id/fragment_contact_details_address"
+                style="@style/MaterialListTextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="10 Evergreen Tce."/>
+
+            <TextView
+                style="@style/MaterialListTextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_contact_details_address"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MaterialListRowLayout">
+
+            <TextView
+                android:id="@+id/fragment_contact_details_website"
+                style="@style/MaterialListTextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="https://nodejs.org"
+                android:autoLink="web"/>
+
+            <TextView
+                style="@style/MaterialListTextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_contact_details_website"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MaterialListRowLayout">
+
+            <TextView
+                android:id="@+id/fragment_contact_details_company"
+                style="@style/MaterialListTextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Megacorp Inc."/>
+
+            <TextView
+                style="@style/MaterialListTextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_contact_details_company"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

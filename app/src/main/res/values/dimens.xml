@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="material_list_padding_horizontal">16dp</dimen>
+    <dimen name="material_list_row_height">72dp</dimen>
+    <dimen name="material_list_tile_padding_horizontal">72dp</dimen>
+</resources>

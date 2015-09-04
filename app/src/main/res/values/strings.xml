@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="fragment_contact_list_retry">Retry</string>
+    <string name="fragment_contact_list_loading">Loading contacts…</string>
+    <string name="action_sort_a_to_z">Sort A-Z</string>
+    <string name="action_sort_z_to_a">Sort Z-A</string>
+    <string name="fragment_contact_details_name">Name</string>
+    <string name="fragment_contact_details_email">Email</string>
+    <string name="fragment_contact_details_phone">Phone</string>
+    <string name="fragment_contact_details_address">Address</string>
+    <string name="fragment_contact_details_website">Website</string>
+    <string name="fragment_contact_details_company">Company</string>
+</resources>
