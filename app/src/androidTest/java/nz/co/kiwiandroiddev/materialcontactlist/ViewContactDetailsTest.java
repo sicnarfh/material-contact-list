@@ -55,7 +55,7 @@ public class ViewContactDetailsTest {
                                         3),
                                 0),
                         isDisplayed()));
-        textView2.check(matches(withText("Suite 847 Douglas Extension McKenziehaven 59590-4157")));
+        textView2.check(matches(withText("Suite 847\nDouglas Extension\nMcKenziehaven\n59590-4157")));
 
     }
 
